@@ -1,0 +1,334 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --background-color: #ffffff;
+    --text-color-subtitulo: #101828;
+    --background-color-section: #fdf8f8;
+    --background-color-footer: #F9FAFB;
+
+
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.barNav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px; 
+}
+
+.barNav {
+    background-color: var(--background-color);
+}
+
+.logo img{
+    width: 148px;
+    height: 26.99px;
+    gap: 8px;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav_btn {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.btn.login {
+    color: var(--text-color);
+}
+
+.btn.cadastrar {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--background-color);
+}
+
+.sobre_nos {
+    text-align: center;
+    padding: 96px 96px;
+    gap: 24px;
+}
+
+.sobre_nos .subtitulo {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sobre_nos .titulo_principal {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 32px 32px;
+    color: #101828;
+    ;
+}
+
+.sobre_nos .descricao {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.metricas_container {
+    background-color: var(--background-color);
+    padding: 96px 96px;
+}
+
+.metricas_container .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.metrica {
+    flex: 1 1 250px;
+    margin: 0 32px;
+}
+
+.numero {
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.subtitulo_metrica {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-color-subtitulo);
+    margin-bottom: 10px;
+}
+
+.descricao_metrica {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 24px;
+}
+
+.recrutamento {
+    padding: 96px 0;
+    text-align: center;
+}
+
+.recrutamento .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.subtitulo_recrutamento {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+}
+
+.titulo_recrutamento {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--text-color-subtitulo);
+    margin-bottom: 20px;
+}
+
+.descricao_recrutamento {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.vagas {
+    padding: 64px 32px;
+}
+
+.vagas .container {
+    margin: 0 auto;
+    padding: 0 256px;
+}
+
+.categoria {
+    margin-bottom: 64px;
+}
+
+.titulo_categoria {
+    margin-bottom: 56px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-color-subtitulo);
+}
+
+.vaga {
+    margin-bottom: 24px;
+    padding: 0 24px;
+}
+
+.titulo_vaga {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-color-subtitulo);
+}
+
+.informacoes {
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.depoimento {
+    background-color: var(--background-color-section);
+    margin-top: 96px;
+    margin-bottom: 96px;
+    text-align: center;
+    max-width: 1280px;
+    margin: 40px auto;
+}
+
+.depoimento .container {
+    padding: 32px 32px;
+}
+
+.depoimento h2 {
+    padding: 64px 16px 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.depoimento blockquote {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color-subtitulo);
+    padding: 32px 0;
+}
+
+.depoimento figure {
+    display: inline-block;
+    text-align: center;
+}
+
+.depoimento figure img {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.depoimento figcaption {
+    padding-bottom: 64px;
+}
+
+.depoimento figcaption strong {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color-subtitulo);
+}
+
+.depoimento figcaption P {
+    font-weight: 400;
+    font-size: 14PX;
+    color: var(--text-color);
+}
+
+.oportunidades {
+    background-color: var(--background-color-footer);
+    margin-top: 96px;
+    text-align: center;
+}       
+
+.oportunidades .container {
+    padding-top: 96px;
+}
+
+.oportunidades h2 {
+    font-weight: 600;
+    font-size: 36px;
+    padding-bottom: 20px;
+    color: var(--text-color-subtitulo);
+}
+
+.oportunidades p {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--text-color);
+    padding-bottom: 40px;
+}
+
+.subscribe_form input[type="email"] {
+    width: 360px;
+    height: 48px;
+    border-radius: 8px;
+    gap: 8px;
+    padding: 12px 14px 12px 16px;
+    border: 1px solid #D0D5DD;
+}
+
+.subscribe_form button {
+    width: 116px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: var(--main-color);
+    font-size: 16px;
+    color: var(--background-color);
+    border: 1px solid #8E2424;
+    background-color: var(--main-color);
+    margin-bottom: 32px;
+}
+
+.subscribe-form button:hover {
+    background-color: #a93226;
+}
+
+footer {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #98A2B3;
+    background-color: var(--background-color-footer);
+}
+
